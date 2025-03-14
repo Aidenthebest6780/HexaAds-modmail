@@ -76,7 +76,7 @@ module.exports = async (client) => {
 
         const closeButton = new ButtonBuilder()
             .setCustomId('close_modmail')
-            .setLabel('Close Mail')
+            .setLabel('Close Ticket')
             .setStyle(ButtonStyle.Danger);
 
         const row = new ActionRowBuilder().addComponents(closeButton);
@@ -85,13 +85,13 @@ module.exports = async (client) => {
 
         const Embed = new EmbedBuilder()
         .setAuthor({
-            name: "Mail Alert",
+            name: "Modmail Alert",
             iconURL: Icons.tick2Icon,
-            url: "https://discord.gg/xQF9f9yUEM"
+            url: "https://discord.gg/xgYzzB9SEh"
         })
-        .setDescription(`Mail has been started. You can now chat with the staff.`)
+        .setDescription(`Support Ticket has been created. You can now chat with the staff.`)
         .setColor('Green')
-        .setFooter({ text: 'Ticket Bot V2!', iconURL: Icons.modIcon });
+        .setFooter({ text: 'HexaAds', iconURL: Icons.modIcon });
         message.author.send({ embeds: [Embed]});
     });
 
@@ -132,13 +132,13 @@ module.exports = async (client) => {
             if (user) {
                 const embed = new EmbedBuilder()
                 .setAuthor({
-                    name: "Mail Alert",
+                    name: "Modmail Alert",
                     iconURL: Icons.tick2Icon,
-                    url: "https://discord.gg/xQF9f9yUEM"
+                    url: "https://discord.gg/xgYzzB9SEh"
                 })
-                .setDescription('Your Mail conversation has been closed by the staff. Thank you for reaching out.')
+                .setDescription('Your Ticket has been closed by the staff. Thank you for reaching out.')
                 .setColor('Red')
-                .setFooter({ text: 'Ticket Bot V2!', iconURL: Icons.modIcon });
+                .setFooter({ text: 'HexaAds', iconURL: Icons.modIcon });
                 await user.send({ embeds: [embed]});
             }
 
