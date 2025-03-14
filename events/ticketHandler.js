@@ -27,9 +27,9 @@ module.exports = async (client) => {
                     if (existingMessages.size === 0) {
                         const embed = new EmbedBuilder()
                         .setAuthor({
-                            name: "Ticket System",
+                            name: "Support",
                             iconURL: Icons.ticketIcon,
-                            url: "https://discord.gg/xQF9f9yUEM"
+                            url: "https://discord.gg/xgYzzB9SEh"
                         })
                         .setDescription('- Please click the button below to create a new ticket.\n\n' +
                             '**Ticket Rules:**\n' +
@@ -120,10 +120,10 @@ module.exports = async (client) => {
                     .setAuthor({
                         name: "Ticket Created Successfully",
                         iconURL: Icons.tickIcon,
-                        url: "https://discord.gg/nuWzGbu8De"
+                        url: "https://discord.gg/xgYzzB9SEh"
                     })
                     .setDescription(`Your ticket channel: ${ticketChannel.url}`)
-                    .setFooter({ text: 'Ticket Bot V2!', iconURL: Icons.modIcon })
+                    .setFooter({ text: 'HexaAds', iconURL: Icons.modIcon })
                     .setColor('#00FF00'); 
 
                 await interaction.user.send({ embeds: [openEmbed] });
